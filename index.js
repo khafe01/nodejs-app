@@ -4,7 +4,7 @@ var express = require("express");
 var app = express();
 //Respond with "hello world" for requests that hit our root "/"
 app.get("/", function (req, res) {
- res.send("hello CSP world, this is the beginning of implementing CICD");
+ res.send("hello CSP world, this is the very beginning of implementing CICD");
 });
 //listen to port 3000 by default
 app.listen(process.env.PORT || 8080);
