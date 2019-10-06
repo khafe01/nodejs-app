@@ -4,16 +4,19 @@
 var request = require('superagent');
 //var prefix = require('superagent-prefix')('/static');
 var express = require("express");
- 
 var app = express();
+var useragent = require('express-useragent');
+ 
+//var app = express();
 //Respond with "hello world" for requests that hit our root "/"
  
-prefix(request); // Prefixes *all* requests
+//prefix(request); // Prefixes *all* requests
  
 
 //.get('/some-url')
 
-request
+//request
+app.use(useragent.express());
 app.get("/", function (req, res) {
   //  .use(nocache) // Prevents caching of *only* this request
  res.send("hey CSP world, this is very beginning of implementing CICD piplinew latest updates 5");
