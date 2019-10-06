@@ -1,6 +1,6 @@
 //importing node framework
 
-var nocache = require('no-cache');
+//var nocache = require('no-cache');
 var request = require('superagent');
 //var prefix = require('superagent-prefix')('/static');
 var express = require("express");
@@ -10,12 +10,16 @@ var app = express();
  
 prefix(request); // Prefixes *all* requests
  
-request
+
 //.get('/some-url')
-.use(nocache) // Prevents caching of *only* this request
+
+request
 app.get("/", function (req, res) {
+  //  .use(nocache) // Prevents caching of *only* this request
  res.send("hey CSP world, this is very beginning of implementing CICD piplines");
+
 });
+
 //listen to port 3000 by default
 app.listen(process.env.PORT || 3000);
  
