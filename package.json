@@ -15,7 +15,7 @@
       "install": "^0.13.0",
       "node": "^12.10.0",
       "node-report": "^2.2.8",
-      "npm": "^6.11.3",
+      "npm": "^6.13.4",
       "selenium": "^2.20.0",
       "selenium-webdriver": "^4.0.0-alpha.5",
       "start": "^5.1.0",
