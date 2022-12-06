@@ -10,7 +10,7 @@
       "chai-as-promised": "^7.1.1",
       "chromedriver": "^77.0.0",
       "dotenv": "^8.1.0",
-      "express": "^3.21.2",
+      "express": "^4.17.3",
       "firebase": "^6.6.2",
       "install": "^0.13.0",
       "node": "^12.10.0",
